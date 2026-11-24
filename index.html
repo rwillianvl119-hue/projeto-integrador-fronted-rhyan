@@ -1,48 +1,170 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Catálogo de Jogos</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #6a0dad;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .jogo {
+            width: 220px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .jogo img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .informacoes {
+            padding: 12px;
+        }
+
+        .informacoes h2 {
+            color: #6a0dad;
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        .informacoes p {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .informacoes strong {
+            color: #4b0082;
+        }
+    </style>
 </head>
+
 <body>
+
     <h1>Catálogo de Jogos</h1>
 
-    <p>Este catálogo apresenta jogos de diferentes gêneros.</p>
+    <div class="catalogo">
 
-    <h2>Gêneros de jogos</h2>
-    <ul>
-        <li>Ação</li>
-        <li>Aventura</li>
-        <li>Esporte</li>
-    </ul>
+        <!-- CALL OF DUTY -->
 
-    <h2>Exemplos de jogos</h2>
-    <table border="1">
-        <tr>
-            <th>Nome do jogo</th>
-            <th>Gênero</th>
-        </tr>
-        <tr>
-            <td>Minecraft</td>
-            <td>Aventura</td>
-        </tr>
-        <tr>
-            <td>EA Sports FC</td>
-            <td>Esporte</td>
-        </tr>
-    </table>
+        <div class="jogo">
+            <img src="assets/images/black-ops.jpg"
+                 alt="Call of Duty Black Ops">
 
-    <h2>Imagem do projeto</h2>
-    <img src="assets/images/catalogo-jogos.svg"
-         alt="Imagem do catálogo de jogos"
-         width="300">
+            <div class="informacoes">
+                <h2>Call of Duty: Black Ops</h2>
 
-    <p>
-        Visite a
-        <a href="https://store.steampowered.com/"
-           target="_blank"
-           rel="noopener noreferrer">loja Steam</a>.
-    </p>
+                <p><strong>Gênero:</strong> Ação e tiro</p>
+
+                <p><strong>Tipo:</strong> FPS (tiro em primeira pessoa)</p>
+
+                <p><strong>Desenvolvedora:</strong> Treyarch</p>
+
+                <p><strong>Publicadora:</strong> Activision</p>
+            </div>
+        </div>
+
+        <!-- JUST DANCE -->
+
+        <div class="jogo">
+            <img src="assets/images/just-dance.jpg"
+                 alt="Just Dance">
+
+            <div class="informacoes">
+                <h2>Just Dance</h2>
+
+                <p><strong>Gênero:</strong> Música e dança</p>
+
+                <p><strong>Tipo:</strong> Ritmo e movimento</p>
+
+                <p><strong>Desenvolvedora:</strong> Ubisoft Paris</p>
+
+                <p><strong>Publicadora:</strong> Ubisoft</p>
+            </div>
+        </div>
+
+        <!-- FORZA HORIZON 2 -->
+
+        <div class="jogo">
+            <img src="assets/images/forza.jpg"
+                 alt="Forza Horizon 2">
+
+            <div class="informacoes">
+                <h2>Forza Horizon 2</h2>
+
+                <p><strong>Gênero:</strong> Corrida</p>
+
+                <p><strong>Tipo:</strong> Corrida em mundo aberto</p>
+
+                <p><strong>Desenvolvedora:</strong> Playground Games (Xbox One)</p>
+
+                <p><strong>Publicadora:</strong> Microsoft Studios</p>
+            </div>
+        </div>
+
+        <!-- FABLE III -->
+
+        <div class="jogo">
+            <img src="assets/images/fable.jpg"
+                 alt="Fable III">
+
+            <div class="informacoes">
+                <h2>Fable III</h2>
+
+                <p><strong>Gênero:</strong> RPG e ação</p>
+
+                <p><strong>Tipo:</strong> RPG de aventura</p>
+
+                <p><strong>Desenvolvedora:</strong> Lionhead Studios</p>
+
+                <p><strong>Publicadora:</strong> Microsoft Game Studios</p>
+            </div>
+        </div>
+
+        <!-- METAL GEAR SOLID -->
+
+        <div class="jogo">
+            <img src="assets/images/metal-gear.jpg"
+                 alt="Metal Gear Solid">
+
+            <div class="informacoes">
+                <h2>Metal Gear Solid</h2>
+
+                <p><strong>Gênero:</strong> Ação e espionagem</p>
+
+                <p><strong>Tipo:</strong> Stealth (ação furtiva)</p>
+
+                <p><strong>Desenvolvedora:</strong> Konami Computer Entertainment Japan</p>
+
+                <p><strong>Publicadora:</strong> Konami</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
