@@ -1,48 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Jogos</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #6a0dad;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: white;
+            margin: 30px;
+        }
+
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .jogo {
+            width: 180px;
+            height: 270px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .jogo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .jogo h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Catálogo de Jogos</h1>
 
-    <p>Este catálogo apresenta jogos de diferentes gêneros.</p>
+    <div class="catalogo">
 
-    <h2>Gêneros de jogos</h2>
-    <ul>
-        <li>Ação</li>
-        <li>Aventura</li>
-        <li>Esporte</li>
-    </ul>
+        <div class="jogo">
+            <img src="assets/images/black-ops.jpg" alt="Call of Duty Black Ops">
+            <h2>Call of Duty: Black Ops</h2>
+        </div>
 
-    <h2>Exemplos de jogos</h2>
-    <table border="1">
-        <tr>
-            <th>Nome do jogo</th>
-            <th>Gênero</th>
-        </tr>
-        <tr>
-            <td>Minecraft</td>
-            <td>Aventura</td>
-        </tr>
-        <tr>
-            <td>EA Sports FC</td>
-            <td>Esporte</td>
-        </tr>
-    </table>
+        <div class="jogo">
+            <img src="assets/images/just-dance.jpg" alt="Just Dance">
+            <h2>Just Dance</h2>
+        </div>
 
-    <h2>Imagem do projeto</h2>
-    <img src="assets/images/catalogo-jogos.svg"
-         alt="Imagem do catálogo de jogos"
-         width="300">
+        <div class="jogo">
+            <img src="assets/images/forza.jpg" alt="Forza Horizon 2">
+            <h2>Forza Horizon 2</h2>
+        </div>
 
-    <p>
-        Visite a
-        <a href="https://store.steampowered.com/"
-           target="_blank"
-           rel="noopener noreferrer">loja Steam</a>.
-    </p>
+        <div class="jogo">
+            <img src="assets/images/fable.jpg" alt="Fable III">
+            <h2>Fable III</h2>
+        </div>
+
+        <div class="jogo">
+            <img src="assets/images/metal-gear.jpg" alt="Metal Gear Solid">
+            <h2>Metal Gear Solid</h2>
+        </div>
+
+    </div>
+
 </body>
 </html>
