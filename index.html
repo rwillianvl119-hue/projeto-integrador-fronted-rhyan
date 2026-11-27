@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,18 @@
             color: white;
             text-align: center;
             margin: 30px;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .descricao {
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 0 15px;
         }
 
         .catalogo {
@@ -60,6 +73,66 @@
         .informacoes strong {
             color: #4b0082;
         }
+
+        .secao {
+            background-color: white;
+            color: #333;
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .secao h2 {
+            color: #6a0dad;
+        }
+
+        .secao ul {
+            line-height: 2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #6a0dad;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #6a0dad;
+            color: white;
+        }
+
+        td {
+            color: #333;
+        }
+
+        .imagem-projeto {
+            display: block;
+            width: 300px;
+            max-width: 100%;
+            margin: 15px auto;
+        }
+
+        .link-steam {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .link-steam a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .link-steam a:hover {
+            color: #d8b4ff;
+        }
     </style>
 </head>
 
@@ -67,15 +140,43 @@
 
     <h1>Catálogo de Jogos</h1>
 
+    <p class="descricao">
+        Este catálogo apresenta jogos de diferentes gêneros.
+        Conheça alguns exemplos e suas principais características.
+    </p>
+
+    <!-- LISTA DE GÊNEROS -->
+
+    <div class="secao">
+
+        <h2>Gêneros de jogos</h2>
+
+        <ul>
+            <li>Ação</li>
+            <li>Aventura</li>
+            <li>Esporte</li>
+            <li>Corrida</li>
+            <li>Música e dança</li>
+            <li>RPG</li>
+        </ul>
+
+    </div>
+
+    <!-- CATÁLOGO DE JOGOS -->
+
+    <h2>Conheça nossos jogos</h2>
+
     <div class="catalogo">
 
         <!-- CALL OF DUTY -->
 
         <div class="jogo">
+
             <img src="assets/images/black-ops.jpg"
                  alt="Call of Duty Black Ops">
 
             <div class="informacoes">
+
                 <h2>Call of Duty: Black Ops</h2>
 
                 <p><strong>Gênero:</strong> Ação e tiro</p>
@@ -85,16 +186,19 @@
                 <p><strong>Desenvolvedora:</strong> Treyarch</p>
 
                 <p><strong>Publicadora:</strong> Activision</p>
+
             </div>
         </div>
 
         <!-- JUST DANCE -->
 
         <div class="jogo">
+
             <img src="assets/images/just-dance.jpg"
                  alt="Just Dance">
 
             <div class="informacoes">
+
                 <h2>Just Dance</h2>
 
                 <p><strong>Gênero:</strong> Música e dança</p>
@@ -104,16 +208,19 @@
                 <p><strong>Desenvolvedora:</strong> Ubisoft Paris</p>
 
                 <p><strong>Publicadora:</strong> Ubisoft</p>
+
             </div>
         </div>
 
         <!-- FORZA HORIZON 2 -->
 
         <div class="jogo">
+
             <img src="assets/images/forza.jpg"
                  alt="Forza Horizon 2">
 
             <div class="informacoes">
+
                 <h2>Forza Horizon 2</h2>
 
                 <p><strong>Gênero:</strong> Corrida</p>
@@ -123,16 +230,19 @@
                 <p><strong>Desenvolvedora:</strong> Playground Games (Xbox One)</p>
 
                 <p><strong>Publicadora:</strong> Microsoft Studios</p>
+
             </div>
         </div>
 
         <!-- FABLE III -->
 
         <div class="jogo">
+
             <img src="assets/images/fable.jpg"
                  alt="Fable III">
 
             <div class="informacoes">
+
                 <h2>Fable III</h2>
 
                 <p><strong>Gênero:</strong> RPG e ação</p>
@@ -142,16 +252,19 @@
                 <p><strong>Desenvolvedora:</strong> Lionhead Studios</p>
 
                 <p><strong>Publicadora:</strong> Microsoft Game Studios</p>
+
             </div>
         </div>
 
         <!-- METAL GEAR SOLID -->
 
         <div class="jogo">
+
             <img src="assets/images/metal-gear.jpg"
                  alt="Metal Gear Solid">
 
             <div class="informacoes">
+
                 <h2>Metal Gear Solid</h2>
 
                 <p><strong>Gênero:</strong> Ação e espionagem</p>
@@ -161,8 +274,78 @@
                 <p><strong>Desenvolvedora:</strong> Konami Computer Entertainment Japan</p>
 
                 <p><strong>Publicadora:</strong> Konami</p>
+
             </div>
         </div>
+
+    </div>
+
+    <!-- TABELA DE JOGOS -->
+
+    <div class="secao">
+
+        <h2>Exemplos de jogos</h2>
+
+        <table>
+
+            <tr>
+                <th>Nome do jogo</th>
+                <th>Gênero</th>
+            </tr>
+
+            <tr>
+                <td>Call of Duty: Black Ops</td>
+                <td>Ação</td>
+            </tr>
+
+            <tr>
+                <td>Just Dance</td>
+                <td>Música e dança</td>
+            </tr>
+
+            <tr>
+                <td>Forza Horizon 2</td>
+                <td>Corrida</td>
+            </tr>
+
+            <tr>
+                <td>Fable III</td>
+                <td>RPG e ação</td>
+            </tr>
+
+            <tr>
+                <td>Metal Gear Solid</td>
+                <td>Ação e espionagem</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- IMAGEM DO PROJETO -->
+
+    <div class="secao">
+
+        <h2>Imagem do projeto</h2>
+
+        <img class="imagem-projeto"
+             src="assets/images/catalogo-jogos.svg"
+             alt="Imagem do catálogo de jogos">
+
+    </div>
+
+    <!-- LINK DA STEAM -->
+
+    <div class="link-steam">
+
+        <p>
+            Visite a
+            <a href="https://store.steampowered.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                loja Steam
+            </a>.
+        </p>
 
     </div>
 
